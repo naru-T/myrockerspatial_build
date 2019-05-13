@@ -6,7 +6,7 @@ RUN mkdir -p /home/rstudio/Codes
 WORKDIR /home/rstudio/Codes/
 RUN chown rstudio:rstudio -R /home/rstudio/Codes
 RUN chmod -R 775 /home/rstudio/Codes
-COPY ./Codes/ /home/rstudio/Codes/
+COPY ./ /home/rstudio/
 RUN chmod -R 775 /home/rstudio/Codes/
 RUN chown rstudio:rstudio -R /home/rstudio/Codes/
 
