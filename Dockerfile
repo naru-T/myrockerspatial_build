@@ -2,6 +2,17 @@ FROM rocker/geospatial:3.6.0
 RUN Rscript -e "install.packages(c('shiny', 'shinythemes','shinydashboard','remotes','leaflet','corpcor','doParallel','here','spdplyr','GWmodel','spgwr','sf','stars','tmap','tmaptools'), repos='http://cran.rstudio.com/')"
 RUN Rscript -e "remotes::install_github('naru-T/MyRMiscFunc')"
 
+<<<<<<< HEAD
+=======
+RUN mkdir -p /home/rstudio/Codes
+WORKDIR /home/rstudio/Codes/
+RUN chown rstudio:rstudio -R /home/rstudio/Codes
+RUN chmod -R 775 /home/rstudio/Codes
+COPY ./ /home/rstudio/
+RUN chmod -R 775 /home/rstudio/Codes/
+RUN chown rstudio:rstudio -R /home/rstudio/Codes/
+
+>>>>>>> c445c8b5e37606aa314fd7be4a9d2c8cd13df189
 
 RUN mkdir -p /home/rstudio/pkg
 RUN chown rstudio:rstudio -R /home/rstudio/pkg
