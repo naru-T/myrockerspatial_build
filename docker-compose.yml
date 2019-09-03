@@ -6,6 +6,7 @@ services:
     volumes:
       - ./codes:/home/rstudio/codes
       - ./outputs:/home/rstudio/outputs
+      - ./misc:/home/rstudio/misc
     environment:
       PASSWORD: passwd
     ports:
