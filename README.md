@@ -1,4 +1,4 @@
-# Interactive Geographically Weighted Correlation Mapping
+# MYROCKERSPATIAL_BUILT
 
 [WIP] This is a template of My rocker spatial workspace
 

@@ -4,7 +4,8 @@ services:
   app:
     build: .
     volumes:
-      - ./codes:/home/rstudio/Codes
+      - ./codes:/home/rstudio/codes
+      - ./outputs:/home/rstudio/outputs
     environment:
       PASSWORD: passwd
     ports:
