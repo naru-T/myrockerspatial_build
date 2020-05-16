@@ -14,12 +14,12 @@ on your system.
 1. Clone this repository.
 
 ```
-git clone git@gitlab.com:naru-T/MyRockerSpatial_build.git
+git clone git@github.com:naru-T/myrockerspatial_build.git
 ```
 
 If cloning a specific branch, like this
 ```
-git clone -b BRANCH-NAME git@gitlab.com:naru-T/MyRockerSpatial_build.git
+git clone -b BRANCH-NAME git@github.com:naru-T/myrockerspatial_build.git
 ```
 
 2. Change directory to the project directory.
