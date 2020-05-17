@@ -1,0 +1,104 @@
+---
+output:
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+    latex_engine: xelatex
+  output: html_notebook
+  word_document: 
+    fig_caption: yes
+    md_extensions: +tex_math_single_backslash
+    reference_docx: knit_to_docx_style.docx
+  html_document:
+    df_print: paged
+author: N. Tsutsumida^\*,1^
+title: TITLE 
+csl: elsevier-harvard.csl
+preamble: |
+  - \usepackage{amsmath,amssymb}
+  - \usepackage{mathspec}
+  - \usepackage{indentfirst}
+  - \usepackage{graphicx}
+  - \usepackage{calc}
+  - \parindent = 1em
+  - \usepackage{zxjatype}
+  - \usepackage[left]{lineno}
+  - \linenumbers
+  - \usepackage{float}
+  - \usepackage{caption}
+  - \usepackage{mathop}
+  - \captionsetup[figure]{labelformat=empty}
+  - \captionsetup[table]{labelformat=empty}
+classoption: xelatex,ja=standard
+bibliography: bib_example.bib
+---
+
+```{r knit_setup, eval=TRUE, include=FALSE}
+options(scipen=10)
+
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(fig.pos = 'H')
+knitr::opts_chunk$set(eval = TRUE)
+knitr::opts_chunk$set(cache = TRUE)
+knitr::opts_chunk$set(warning = FALSE)
+knitr::opts_chunk$set(error = FALSE)
+knitr::opts_chunk$set(message = FALSE)
+
+set.seed(1118)
+```
+
+
+```{r libraries, include=FALSE}
+library(shiny)
+library(leaflet)
+library(sf)
+library(sp)
+library(tidyverse)
+library(shinydashboard)
+library(here)
+library(stars)
+library(tmap)
+library(GWmodel)
+```
+
+## Abstract
+- how to write a paper(https://www.nature.com/nature-research/for-authors/write)
+- http://www-mech.eng.cam.ac.uk/mmd/ashby-paper-V6.pdf
+
+## Keywords
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
+
+## 1.Introduction
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.  
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
+
+## 2.Methods
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.  
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
+
+## 3.Study area
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.  
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
+
+## 4.Results
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.  
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
+
+## 5. Discussion
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.  
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
+
+## 6. Conclusions
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.  
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
+
+## Acknowledgements
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.  
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
+
+## Appendix
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.  
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
+
+## References
+

@@ -7,4 +7,5 @@ library(shinydashboard)
 library(here)
 library(stars)
 library(tmap)
+library(GWmodel)
 

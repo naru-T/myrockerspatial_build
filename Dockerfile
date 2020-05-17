@@ -6,12 +6,20 @@ COPY ./ /home/rstudio/
 RUN chmod -R 775 /home/rstudio/
 RUN chown rstudio:rstudio -R /home/rstudio/
 
+RUN apt-get update &&\
+    apt-get install -y binutils libproj-dev gdal-bin
+
 RUN install2.r --error \
-  shinythemes \ 
-  shinydashboard \  
-  spdplyr \ 
+  shinythemes \
+  shinydashboard \
+  spdplyr \
   here \
   lwgeom \
   tmap \
   tmaptools \
-  stars
+  stars \
+  GWmodel
+
+
+RUN Rscript -e "remotes::install_github('naru-T/MyRMiscFunc')"
+

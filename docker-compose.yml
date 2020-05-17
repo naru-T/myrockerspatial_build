@@ -4,10 +4,8 @@ services:
   app:
     build: .
     volumes:
-      - ./codes:/home/rstudio/codes
-      - ./outputs:/home/rstudio/outputs
-      - ./misc:/home/rstudio/misc
+      - .:/home/rstudio/
     environment:
       PASSWORD: passwd
     ports:
-      - "80:8787"
+      - "8080:8787"
