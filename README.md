@@ -1,6 +1,6 @@
 # MYROCKERSPATIAL_BUILT
 
-[WIP] This is a template of My rocker spatial workspace
+This is a template of My rocker spatial workspace
 
 ## Usage:
 
