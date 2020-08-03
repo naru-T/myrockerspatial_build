@@ -35,7 +35,7 @@ With [docker-compose](https://docs.docker.com/compose/install/) installed, simpl
 docker-compose up -d --b
 ```
 
-5. Access the application at `http://localhost:80`
+5. Access the application at `http://localhost:8787`
 
 6. login name: rstudio / password: passwd
 
