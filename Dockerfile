@@ -10,6 +10,7 @@ RUN apt-get update &&\
     apt-get install -y binutils libproj-dev gdal-bin
 
 RUN install2.r --error \
+  remotes \
   shinythemes \
   shinydashboard \
   spdplyr \
@@ -18,7 +19,18 @@ RUN install2.r --error \
   tmap \
   tmaptools \
   stars \
-  GWmodel
+  GWmodel \
+  gwrr \
+  spgwr \
+  viridis \
+  gridExtra \
+  colorspace \
+  scales \
+  rasterVis \
+  knitr \
+  kableExtra \
+  doMC \
+  foreach 
 
 
 RUN Rscript -e "remotes::install_github('naru-T/MyRMiscFunc')"
