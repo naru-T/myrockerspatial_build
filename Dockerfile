@@ -1,4 +1,4 @@
-FROM rocker/geospatial:4.0.2
+FROM rocker/geospatial:4.0.３
 
 RUN chown rstudio:rstudio -R /home/rstudio/
 RUN chmod -R 775 /home/rstudio/
@@ -105,7 +105,6 @@ RUN wget "https://travis-bin.yihui.name/texlive-local.deb" \
   && install2.r --error --deps TRUE \
     bookdown rticles rmdshower rJava
 #
-
 RUN tlmgr update --self
 
 
