@@ -1,4 +1,4 @@
-FROM rocker/geospatial:4.0.3
+FROM rocker/geospatial:4.0.2
 
 RUN chown rstudio:rstudio -R /home/rstudio/
 RUN chmod -R 775 /home/rstudio/
@@ -30,7 +30,8 @@ RUN install2.r --error \
   knitr \
   kableExtra \
   doMC \
-  foreach 
+  foreach \
+  renv
 
 
 RUN Rscript -e "remotes::install_github('naru-T/MyRMiscFunc')"
