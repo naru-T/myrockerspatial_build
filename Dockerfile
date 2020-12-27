@@ -18,11 +18,17 @@ RUN install2.r --error \
   lwgeom \
   tmap \
   tmaptools \
+  sp \
+  sf \
   stars \
   GWmodel \
-  gwrr \
-  spgwr \
+  tidyverse \
+  readr \
+  data.table \
+  magrittr \
+  purrr \
   viridis \
+  ggplot2 \
   gridExtra \
   colorspace \
   scales \
