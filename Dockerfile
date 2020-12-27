@@ -1,4 +1,4 @@
-FROM rocker/geospatial:4.0.2
+FROM rocker/geospatial:4.0.3
 
 RUN chown rstudio:rstudio -R /home/rstudio/
 RUN chmod -R 775 /home/rstudio/
