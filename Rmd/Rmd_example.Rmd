@@ -64,6 +64,7 @@ library(GWmodel)
 ## Abstract
 - how to write a paper(https://www.nature.com/nature-research/for-authors/write)
 - http://www-mech.eng.cam.ac.uk/mmd/ashby-paper-V6.pdf
+- https://www.springernature.com/gp/authors/campaigns/how-to-submit-a-journal-article-manuscript?utm_source=twitter&utm_medium=social&utm_content=ads&utm_campaign=JJPN_1_YK01_JP_as_how-to-submit
 
 ## Keywords
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
