@@ -7,7 +7,25 @@ RUN chmod -R 775 /home/rstudio/
 RUN chown rstudio:rstudio -R /home/rstudio/
 
 RUN apt-get update &&\
-    apt-get install -y binutils libproj-dev gdal-bin libgdal-dev libudunits2-dev fonts-ipafont libfontconfig1-dev
+      apt-get install -y \
+      fonts-ipafont \
+      libfontconfig1-dev \
+      libxml2-dev \
+      libcurl4-openssl-dev \
+      libssl-dev \
+      libharfbuzz-dev \
+      libfribidi-dev \
+      libfreetype6-dev \
+      libpng-dev \
+      libtiff5-dev \
+      libjpeg-dev \
+      fontconfig \
+      libfontconfig1-dev \
+      binutils \
+      libproj-dev \
+      gdal-bin \
+      libgdal-dev \
+      libudunits2-dev
 
 RUN install2.r --error \
   remotes \
