@@ -24,3 +24,5 @@ bin-release/
 *.TinyTex/
 Rmd/Rmd_example_cache/*
 .*
+
+ee-private-key.json
