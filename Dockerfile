@@ -17,7 +17,6 @@ RUN apt-get update \
       python3-wheel  \
       python3-setuptools \
       build-essential  \
-      oauth2client \
       cmake \
       graphviz  \
       git  \
@@ -74,7 +73,7 @@ RUN curl -sSL https://sdk.cloud.google.com | bash
 ENV PATH=$PATH:/root/google-cloud-sdk/bin
 
 # Install the Earth Engine Python API.
-RUN pip3 install earthengine-api
+RUN pip3 install earthengine-api geemap --upgrade
 
 RUN install2.r --error \
   remotes \
@@ -106,14 +105,5 @@ RUN install2.r --error \
 
 # RUN Rscript -e "remotes::install_github('naru-T/MyRMiscFunc')"
 RUN Rscript -e "tinytex::install_tinytex()"
-
-## rgee
-# Install anaconda
-RUN echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
-    wget --quiet https://repo.continuum.io/archive/Anaconda2-4.3.1-Linux-x86_64.sh -O ~/anaconda.sh && \
-    /bin/bash ~/anaconda.sh -b -p /opt/conda && \
-    rm ~/anaconda.sh
-RUN  mkdir -p /home/rgee/.config/earthengine/ndef && \
-     echo 'EARTHENGINE_PYTHON=/usr/bin/python3\nEARTHENGINE_INIT_MESSAGE="True"' > /home/rgee/.Renviron
 
 #https://hub.docker.com/r/rocker/verse/dockerfile
